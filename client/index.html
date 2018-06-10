@@ -1,0 +1,42 @@
+<html ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 align="center">Random User App</h1>
+        </div>
+
+        <h3 align="center">This app uses the Random User generator to create a new user</h3>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" href="#!user-list">Retrieve User List</a>
+            </li>
+            &nbsp;
+            <li class="nav-item">
+                <a class="nav-link active" href="#!new-user">New User</a>
+            </li>
+        </ul>
+
+
+    </div>
+    <section class="container" ng-view />
+
+
+    <script src="https://code.angularjs.org/1.6.6/angular.min.js "></script>
+    <script src="https://code.angularjs.org/1.6.6/angular-route.min.js "></script>
+    <script src="angular.module.js "></script>
+    <script src="UserListController.js "></script>
+    <script src="NewUserController.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+{
+    "name": "random-user",
+    "version": "1.0.0",
+    "description": "Random User Generator",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Pratik Mathur",
+    "license": "ISC",
+    "dependencies": {
+        "async": "^2.6.1",
+        "request": "^2.87.0",
+        "serverless": "^1.27.3",
+        "uuid": "^3.2.1"
+    },
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pratikmathur279/Random-User-Generator.git"
+    },
+    "bugs": {
+        "url": "https://github.com/pratikmathur279/Random-User-Generator/issues"
+    },
+    "homepage": "https://github.com/pratikmathur279/Random-User-Generator#readme"
+}
