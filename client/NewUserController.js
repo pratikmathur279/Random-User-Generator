@@ -22,7 +22,7 @@
         }
 
         function getUser() {
-            $http.get('https://ihstc8f96b.execute-api.us-east-1.amazonaws.com/dev/getuser')
+            $http.get('https://1y9gvnez47.execute-api.us-east-1.amazonaws.com/dev/getuser')
                 .then(function (res) {
                         newUserVm.user = res.data;
                         //console.log(newUserVm.user);

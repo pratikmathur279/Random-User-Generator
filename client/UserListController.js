@@ -24,7 +24,7 @@
         }
 
         function retrieveUsers() {
-            $http.get('https://ihstc8f96b.execute-api.us-east-1.amazonaws.com/dev/retrieveusers')
+            $http.get('https://1y9gvnez47.execute-api.us-east-1.amazonaws.com/dev/retrieveusers')
                 .then(function (res) {
                         userListVm.users = res.data.Items;
                         // console.log(userListVm.users);
@@ -34,9 +34,9 @@
                     });
         }
 
-        function removeUser(username) {
-            console.log("remove user" + username);
-            $http.get('https://ihstc8f96b.execute-api.us-east-1.amazonaws.com/dev/removeuser/' + username)
+        function removeUser(id) {
+            console.log("remove user" + id);
+            $http.get('https://1y9gvnez47.execute-api.us-east-1.amazonaws.com/dev/removeuser/' + id)
                 .then(function (res) {
                         console.log("deleted");
                     },

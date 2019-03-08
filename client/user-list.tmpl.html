@@ -38,7 +38,7 @@
                 <td>{{user.state}}</td>
                 <td>{{user.postcode}}</td>
                 <td><i ng-click="userListVm.removeUser(user.username)" class="glyphicon glyphicon-remove"></i></td>
-                <td><button class="btn btn-primary" ng-click="userListVm.removeUser(user.username)">Delete!</button></td>
+                <td><button class="btn btn-primary" ng-click="userListVm.removeUser(user.id)">Delete!</button></td>
             </tr>
         </tbody>
     </table>

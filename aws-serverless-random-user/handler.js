@@ -12,15 +12,15 @@ module.exports.getUser = (event, context, callback) => {
     var data1 = {};
 
     var options = {
-        url: 'https://randomuser.me/api'
+        url: 'https://randomuser.me/api/'
     };
 
     const responseHeaders = {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*', // Required for CORS support to work
-        'Access-Control-Allow-Credentials': true // Required for cookies, authorization headers with HTTPS 
+//        'Access-Control-Allow-Credentials': true // Required for cookies, authorization headers with HTTPS 
     }
-
+    console.log("came here");
     return new Promise(function (resolve, reject) {
         //Do async job
         return request.get(options, function (err, resp, body) {
@@ -90,3 +90,4 @@ module.exports.removeUser = (event, context, callback) => {
         })
         .catch(callback);
 }
+
