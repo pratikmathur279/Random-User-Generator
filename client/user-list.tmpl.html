@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>User list</h1>
 
 <button class="btn btn-primary" type="submit" ng-click="userListVm.retrieveUsers(); ">Click here to refresh list</button>
@@ -43,3 +44,48 @@
         </tbody>
     </table>
 </div>
+=======
+<h1>User list</h1>
+
+<button class="btn btn-primary" type="submit" ng-click="userListVm.retrieveUsers(); ">Click here to refresh list</button>
+
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Profile Pic</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Gender</th>
+                <th>Username</th>
+                <th>Phone</th>
+                <th>Cell</th>
+                <th>Date of Birth</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Postcode</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="user in userListVm.users">
+                <td>
+                    <img ng-src="{{user.picturelarge}}" />
+
+                </td>
+                <td>{{user.firstname}}</td>
+                <td>{{user.lastname}}</td>
+                <td>{{user.gender}}</td>
+                <td>{{user.username}}</td>
+                <td>{{user.phone}}</td>
+                <td>{{user.cell}}</td>
+                <td>{{user.dob}}</td>
+                <td>{{user.street}}</td>
+                <td>{{user.city}}</td>
+                <td>{{user.state}}</td>
+                <td>{{user.postcode}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+>>>>>>> ed6c8c1b904722b2f3b8a69025816304f4bc429c
