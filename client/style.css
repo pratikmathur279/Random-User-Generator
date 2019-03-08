@@ -1,11 +1,39 @@
-<<<<<<< HEAD
 .container {
     padding-left: 0;
     padding-right: 0;
+    width: 100%;
+    margin:0 auto;
+/*    text-align: center;*/
+    max-width: 100%;
 }
-=======
-.container {
-    padding-left: 0;
-    padding-right: 0;
+
+.view{
+    padding: 0 20px;
 }
->>>>>>> ed6c8c1b904722b2f3b8a69025816304f4bc429c
+
+h1 {
+    text-align: center;
+}
+table {
+    width: inherit;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    margin: 20px 0;
+}
+
+h3 {
+    margin-top: 25px;
+}
+
+.nav-pills {
+/*    display: inline*/
+    padding-left: 20px;
+}
+
+.refresh {
+    right: 20px;
+    position: absolute;
+    margin: 10px 0;
+}
